@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background: white;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-items:space-between ;
+}
+nav ul li{
+ display: inline-block;
+ list-style: none;
+ margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:rgb(230, 244, 37);
+
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.detel h1{
+    font-size: 50px;
+    color: rgb(19, 10, 10);
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+.detel p{
+    color: #555;
+    line-height: 22px;
+
+}
+.detel a{
+   background: #212121;
+   padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border: radius 5px; 
+}
