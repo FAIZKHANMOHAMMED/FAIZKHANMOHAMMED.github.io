@@ -21,6 +21,8 @@ nav ul li{
  display: inline-block;
  list-style: none;
  margin: 10px 20px;
+ position: relative;
+ bottom: 100px; ;
 }
 nav ul li a{
     text-decoration: none;
@@ -28,7 +30,7 @@ nav ul li a{
     font-weight: bold;
 }
 nav ul li a:hover{
-    color:rgb(230, 244, 37);
+    color:rgb(218, 108, 61);
 
 }
 .detel{
@@ -58,3 +60,15 @@ span{
     margin: 30px 0;
     border: radius 5px; 
 }
+.img_deg{
+    position: relative;
+    left: 830px;
+    bottom:  350px;
+  }
+  .bg{
+    background-image: url(https://th.bing.com/th/id/R.759bb7ef319a9f5ba67e208e23945a25?rik=xG3KgXFdJ2G18Q&riu=http%3a%2f%2favante.biz%2fwp-content%2fuploads%2fWhite-Background-Images%2fWhite-Background-Images-005.jpg&ehk=CURS%2b%2fCf4ddg7Z5XRoxTDL1ocRwuhzosxsvfadKhsKY%3d&risl=&pid=ImgRaw&r=0);
+    
+  }
+  .bg background-image{
+    opacity:-0.5;
+  }
