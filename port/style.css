@@ -2,12 +2,24 @@
     margin:0;
     padding: 0;
     font-family: sans-serif;
+   justify-content: center;
+}
+.LOGO{
+    margin-top: 75px;
 }
 .hero{
     position: relative;
     width: 100%;
     height: 75%;
     background: white;
+}
+.nav_bar{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-items:space-between ;
 }
 nav{
     display: flex;
@@ -22,19 +34,21 @@ nav ul li{
  list-style: none;
  margin: 10px 20px;
  position: relative;
- bottom: 100px; ;
+ top: 25px; 
 }
 nav ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+   
 }
 nav ul li a:hover{
     color:rgb(218, 108, 61);
 
 }
 .detel{
-    margin-left: 8%;
+
+    margin-left: 40%;
     margin-top: 5%;
 }
 .detel h1{
@@ -62,11 +76,13 @@ span{
 }
 .img_deg{
     position: relative;
+    margin-right: 650px;
     left: 830px;
     bottom:  350px;
   }
   .bg{
     background-image: url(https://th.bing.com/th/id/R.759bb7ef319a9f5ba67e208e23945a25?rik=xG3KgXFdJ2G18Q&riu=http%3a%2f%2favante.biz%2fwp-content%2fuploads%2fWhite-Background-Images%2fWhite-Background-Images-005.jpg&ehk=CURS%2b%2fCf4ddg7Z5XRoxTDL1ocRwuhzosxsvfadKhsKY%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat ;
     
   }
   .bg background-image{
