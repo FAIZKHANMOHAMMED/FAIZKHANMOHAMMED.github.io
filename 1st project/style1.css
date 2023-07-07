@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+}
+.tabla{
+    align-items: center;
+}
+
+.big {
+    position: absolute;
+    justify-content: center;
+    list-style-type: square;
+    left: 260px;
+    font-family: bold;
+}
+
+th {
+    background-color: orange;
+}
+
+tr {
+    background-color: aqua;
+}
+
+td {
+    background-color: bisque;
+}
+
+.heading {
+    color: rgb(146, 115, 175);
+}
