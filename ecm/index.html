@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Vignan's ECM Department</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#"class="logo">ECM</a>
+        <ul class="nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">STATS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li> <a href="#">PLACEMENTS</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu"></div>
+    </header>
+    <section class="hero">
+        <div class="herot">
+            <h5>Welcome to the ECM Department</h5> 
+            <br>
+            <p>The ECM department offers undergraduate and postgraduate programs in Electronics and Computer Engineering.
+                The department has well-equipped laboratories, experienced faculty and industry collaborations. The
+                department aims to provide quality education and research opportunities to the students.</p>     
+        </div>
+        <div class="herimg">
+            <img src="img.jpg" alt="" width=400px;>
+        </div>
+    </section>
+    <script>
+        let menu1=document.querySelector('#menu');
+        let nav1=document.querySelector('.nav');
+        menu1.onclick=()=>{
+            menu1.classList.toggle('bx-x');
+            nav1.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

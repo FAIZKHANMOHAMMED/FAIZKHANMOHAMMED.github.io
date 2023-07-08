@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+  header{
+    position: fixed;
+    padding: 33px 9%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .nav{
+    display: flex;
+  }
+  .nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 60px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition:.45s ease all;
+  }
+  .nav a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  #menu{
+    cursor: pointer;
+    font-size: 35px;
+    z-index: 10001;
+    color: white;
+    display: none;
+  }
+  .hero
+  {
+    height: 100%;
+    weight:100%;
+    min-height: 100vh;
+        background: #28BECC;
+    background: linear-gradient(135deg, #28BECC, #E44327);
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+position: relative;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+gap: 2rem;
+  }
+  section{
+    padding: 0 19%;
+  }
+.herot h5{
+    font-size: 55px;
+    font-weight: 350;
+    color:white;
+    margin-bottom: 40px;
+}
+.herot p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+@media (max-width:1535px){
+  header{
+    padding: 15px 3%;
+    transition: 2s;
+  }
+}
+@media(max-width:1460px){
+  section{
+    padding: 0 10% ;
+    transition: 0.2s;
+  }
+}
+@media(max-width:1340px){
+  .herimg{
+    width: auto !important;
+    height:auto;
+  }
+}
+@media(max-width:1195px){
+  section{
+    padding: 0 3%;
+    transition: 0.2s;
+
+  }
+  .herot{
+    padding-top: 115px;
+
+  }
+.herimg{
+  text-align: center;
+  width:560px;
+  height: auto;
+}
+.hero{
+  height: 100%;
+  gap:1rem;
+  grid-template-columns: 1fr;
+}
+}
+@media(max-width:990px){
+  #menu{
+    display: block;
+  }
+  .nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background:#7028e4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+  }
+.nav{
+  margin-left:0;
+  display: block;
+  margin: 10px 0;
+  }
+.nav.open{
+  right: 0; 
+
+}}
+
+@media(herimgmax-width:680px){
+  .herimg img {
+    width:100%;
+    height: auto;
+
+  }
+
+}
