@@ -285,7 +285,6 @@ strong {
 
 .sticky-wrapper.is-sticky .navbar {
   background-color: var(--secondary-color);
-  background-image: linear-gradient(135deg, #FF6FD8 10%, #3813C2 100%);
 }
 
 .navbar {
@@ -487,7 +486,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
