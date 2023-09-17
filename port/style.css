@@ -1,90 +1,95 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    font-family: sans-serif;
-   justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
-.LOGO{
-    margin-top: 75px;
+body{
+    opacity: 0;
+    transition: opacity 3s;
 }
-.hero{
+main{
+    max-width: 100%;
+    height: 100vh;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+}
+.navbar_link ul{
     position: relative;
-    width: 100%;
-    height: 75%;
-    background: white;
-}
-.nav_bar{
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
     align-items: center;
-    justify-items:space-between ;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
 }
-nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-items:space-between ;
-}
-nav ul li{
- display: inline-block;
- list-style: none;
- margin: 10px 20px;
- position: relative;
- top: 25px; 
-}
-nav ul li a{
+.navbar_link a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-   
+    color: #2a2a2a;
+    font-weight: 400;
+    transition: all 100ms ease;
 }
-nav ul li a:hover{
-    color:rgb(218, 108, 61);
+.navbar_link ul a:hover{
+    color: rgb(211, 81, 81);
+}
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 67px ;
+}
+ .main2 .faiz{
 
+    width: 350px;
+transition: all 2000ms ease;
+cursor: pointer;
 }
-.detel{
-
-    text-align:center;
-    margin-top: 5%;
+.main2 .faiz:hover{
+    box-shadow: 2px 2px 2px ease;
+    transform: scale(1.2);
 }
-.detel h1{
+.main2 .txt{
+    text-align: center;
+    color: #2a2a2a;
+}
+.main2 .txt h1{
     font-size: 50px;
-    color: rgb(19, 10, 10);
+}
+.main2 .txt h4{
+    font-size: 30px;
     margin-bottom: 20px;
 }
-span{
-    color: orange;
-}
-.detel p{
-    color: #555;
-    line-height: 22px;
+.main2 .btn1 button{
+    padding: 8px 20px;
+    background: #2a2a2a;
+    color: antiquewhite;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin: 1rem;
+    transition: all 1000ms ease;
+    transform: scale(1.07);
 
 }
-.detel a{
-   background: #212121;
-   padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border: radius 5px; 
+.main2 .btn1 button:hover{
+    cursor: pointer;
+    background-color: rgb(247, 124, 124);
 }
-.img_deg{
-    position: relative;
-    margin-right: 650px;
-    left: 830px;
-    bottom:  350px;
-  }
-  .bg{
-    background-image: url(https://th.bing.com/th/id/R.759bb7ef319a9f5ba67e208e23945a25?rik=xG3KgXFdJ2G18Q&riu=http%3a%2f%2favante.biz%2fwp-content%2fuploads%2fWhite-Background-Images%2fWhite-Background-Images-005.jpg&ehk=CURS%2b%2fCf4ddg7Z5XRoxTDL1ocRwuhzosxsvfadKhsKY%3d&risl=&pid=ImgRaw&r=0);
-    background-repeat: no-repeat ;
-    
-  }
-  .bg background-image{
-    opacity:-0.5;
-  }
+.icn a{
+   color: black;
+}
+.icn {
+
+    transition: all 2000ms ease;
+    color: #b42525;
+    font-size: 40px;
+    margin: 0px 15px;
+    cursor:pointer;
+   
+}
+.icn :hover{
+    transform: scale(1.15);
+}
