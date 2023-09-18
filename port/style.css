@@ -16,7 +16,24 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 200px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+    box-sizing: border-box;
+    box-shadow: inset ;
+}
+.nav{
+    background-color: #b8aaaa;
+    position:relative;
+    box-shadow: 0 1px 4px rgb(0, 0, 0,0.3), rgb(0, 0, 0,0.1) inset ;
+}
+.nav:before,.nav:after{
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top:50%;
+    border-radius: 100px/10px;
 }
 .navbar_link ul{
     position: relative;
@@ -26,7 +43,7 @@ main{
     gap: 2rem;
     list-style: none;
 }
-.navbar_link a{
+.log a,.navbar_link a{
     text-decoration: none;
     color: #2a2a2a;
     font-weight: 400;
