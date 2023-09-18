@@ -59,7 +59,9 @@ nav:after {
 }
 
 .navbar_link ul a:hover {
-    color: rgb(228, 101, 101);
+    color: rgb(211, 93, 93);
+    text-decoration:dotted;
+    transition: all 500ms ease;
 }
 
 .main2 {
@@ -73,13 +75,13 @@ nav:after {
 .main2 .faiz {
 
     width: 350px;
-    transition: all 2000ms ease;
+    transition: all 1400ms ease;
     cursor: pointer;
 }
 
 .main2 .faiz:hover {
     box-shadow: 2px 2px 2px ease;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .main2 .txt {
@@ -170,7 +172,7 @@ nav{
 }
 @media (max-width: 350px){
     nav{
-
+        justify-content: space-around;
         padding-left: 30px;
         padding-right: 20px;
         padding-top: 24px;
