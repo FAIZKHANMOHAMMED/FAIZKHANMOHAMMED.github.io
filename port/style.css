@@ -1,19 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
-body{
+
+body {
     opacity: 0;
     transition: opacity 3s;
-    
 }
-main{
+
+main {
     max-width: 100%;
     height: 100vh;
 }
-.nav
-{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,21 +23,25 @@ main{
     padding-top: 40px;
     padding-bottom: 27px;
     box-sizing: border-box;
-    box-shadow: inset ;
+    box-shadow: inset;
 }
-/* .nav{
-    background-color: #b8aaaa;
-    position:relative;
-    box-shadow: 0 1px 4px rgb(0, 0, 0,0.3), rgb(0, 0, 0,0.1) inset ;
+
+nav {
+
+    position: relative;
+    box-shadow: 0 1px 4px rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.1) inset;
 }
-.nav:before,.nav:after{
+
+nav:before,
+nav:after {
     position: absolute;
     z-index: -1;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    top:50%;
+    top: 50%;
     border-radius: 100px/10px;
-} */
-.navbar_link ul{
+}
+
+.navbar_link ul {
     position: relative;
     display: flex;
     align-items: center;
@@ -44,44 +49,54 @@ main{
     gap: 2rem;
     list-style: none;
 }
-.log a,.navbar_link a{
+
+.log a,
+.navbar_link a {
     text-decoration: none;
     color: #2a2a2a;
     font-weight: 400;
     transition: all 100ms ease;
 }
-.navbar_link ul a:hover{
-    color: rgb(211, 81, 81);
+
+.navbar_link ul a:hover {
+    color: rgb(228, 101, 101);
 }
-.main2{
+
+.main2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin-top: 67px ;
+    margin-top: 67px;
 }
- .main2 .faiz{
+
+.main2 .faiz {
 
     width: 350px;
-transition: all 2000ms ease;
-cursor: pointer;
+    transition: all 2000ms ease;
+    cursor: pointer;
 }
-.main2 .faiz:hover{
+
+.main2 .faiz:hover {
     box-shadow: 2px 2px 2px ease;
     transform: scale(1.2);
 }
-.main2 .txt{
+
+.main2 .txt {
     text-align: center;
     color: #2a2a2a;
 }
-.main2 .txt h1{
+
+.main2 .txt h1 {
     font-size: 50px;
 }
-.main2 .txt h4{
+
+.main2 .txt h4 {
     font-size: 30px;
     margin-bottom: 20px;
 }
-.main2 .btn1 button{
+
+.main2 .btn1 button {
     padding: 8px 20px;
     background: #2a2a2a;
     color: antiquewhite;
@@ -92,22 +107,68 @@ cursor: pointer;
     transform: scale(1.07);
 
 }
-.main2 .btn1 button:hover{
+
+.main2 .btn1 button:hover {
     cursor: pointer;
     background-color: rgb(247, 124, 124);
 }
-.icn a{
-   color: black;
+
+.icn a {
+    color: black;
 }
+
 .icn {
 
     transition: all 2000ms ease;
     color: #b42525;
     font-size: 40px;
     margin: 0px 15px;
-    cursor:pointer;
-   
+    cursor: pointer;
+
 }
-.icn :hover{
+
+.icn :hover {
     transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    .main2 {
+        align-items: center;
+        flex-direction: column;
+    }
+nav{
+    padding-left: 40px;
+    padding-right: 24px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+    .navbar_link ul li {
+        font-size: small;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .faiz {
+        width: 200px;
+    }
+}
+@media (max-width: 500px){
+    nav{
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 15px;
+    }
+    .faiz {
+        width: 175px;
+    }
+    .main2 {
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar_link ul li {
+        font-size: small;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
 }
