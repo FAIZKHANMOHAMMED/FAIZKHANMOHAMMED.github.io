@@ -168,7 +168,7 @@ nav{
         transform: scale(1.04);
     }
 }
-@media (max-width: 500px){
+@media (max-width: 350px){
     nav{
 
         padding-left: 30px;
