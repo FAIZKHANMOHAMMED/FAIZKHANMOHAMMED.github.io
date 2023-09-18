@@ -6,6 +6,7 @@
 body{
     opacity: 0;
     transition: opacity 3s;
+    
 }
 main{
     max-width: 100%;
@@ -23,7 +24,7 @@ main{
     box-sizing: border-box;
     box-shadow: inset ;
 }
-.nav{
+/* .nav{
     background-color: #b8aaaa;
     position:relative;
     box-shadow: 0 1px 4px rgb(0, 0, 0,0.3), rgb(0, 0, 0,0.1) inset ;
@@ -34,7 +35,7 @@ main{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     top:50%;
     border-radius: 100px/10px;
-}
+} */
 .navbar_link ul{
     position: relative;
     display: flex;
