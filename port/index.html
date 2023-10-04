@@ -6,6 +6,194 @@
   <title>FAIZ Portfolio</title>
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+body {
+    opacity: 0;
+    transition: opacity 3s;
+}
+main {
+    max-width: 100%;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+    box-sizing: border-box;
+   
+}
+
+header{
+    box-shadow: 0px -30px 20px rgba(0,0,0, 0.3);
+    background-color: fff;
+}
+.navbar_link ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.log a,
+.navbar_link a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 400;
+    transition: all 100ms ease;
+}
+
+.navbar_link ul a:hover {
+    color: rgb(211, 93, 93);
+    text-decoration:dotted;
+    transition: all 500ms ease;
+}
+
+.main2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 67px;
+}
+
+.main2 .faiz {
+
+    width: 350px;
+    transition: all 1400ms ease;
+    cursor: pointer;
+}
+
+.main2 .faiz:hover {
+    box-shadow: 2px 2px 2px ease;
+    transform: scale(1.15);
+}
+
+.main2 .txt {
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.main2 .txt h1 {
+    font-size: 50px;
+}
+
+.main2 .txt h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main2 .btn1 button {
+    padding: 8px 20px;
+    background: #2a2a2a;
+    color: antiquewhite;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin: 1rem;
+    transition: all 1000ms ease;
+    transform: scale(1.07);
+
+}
+
+.main2 .btn1 button:hover {
+    cursor: pointer;
+    background-color: rgb(247, 124, 124);
+}
+
+.icn a {
+    color: black;
+}
+
+.icn {
+
+    transition: all 2000ms ease;
+    color: #b42525;
+    font-size: 40px;
+    margin: 0px 15px;
+    cursor: pointer;
+
+}
+
+.icn :hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+    .main2 .btn1 button {
+        padding: 6px 16px;
+        background: #2a2a2a;
+        color: antiquewhite;
+        border-radius: 20x;
+        border: 1px solid #2a2a2a;
+        margin: 0.7rem;
+        transition: all 1000ms ease;
+        transform: scale(0.9);
+    
+    }
+    .main2 {
+        align-items: center;
+        flex-direction: column;
+    }
+nav{
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 24px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.main2 .txt h1 {
+    font-size: 45px;
+}
+    .navbar_link ul li {
+        font-size: small;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .faiz {
+        width: 200px;
+        transform: scale(1.04);
+    }
+}
+@media (max-width: 350px){
+   body{
+    transition: 2s;
+   }
+    nav{
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 15px;
+    }
+    .main2 .txt h1 {
+        font-size: 40px;
+    }
+    .faiz {
+        width: 175px;
+        transform: scale(1.01);
+    }
+    .main2 {
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar_link ul li {
+        font-size: small;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+}
+  </style>
 </head>
 <body onload="document.body.style.opacity='1'">
 
