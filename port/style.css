@@ -20,7 +20,6 @@ nav {
     padding-top: 40px;
     padding-bottom: 27px;
     box-sizing: border-box;
-   
 }
 
 header{
@@ -117,6 +116,53 @@ header{
 
 .icn :hover {
     transform: scale(1.15);
+}
+/* cards */
+.allcards {
+width: 30%;
+background-color: rgb(234, 229, 229);
+border-radius: 7px;
+margin: 5px;
+box-shadow: 2px 2px 10px black;
+}
+.allcards:hover{
+    transform: scale(1.03);
+    transition: 500ms ease;
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 7px; border-top-left-radius: 7px;
+}
+.title,button ,.des{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+button {
+   
+    background: #2a2a2a;
+    color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.allcards button a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+button:hover{
+    background-color: rgb(247, 124, 124);
+    color: white;
+    transition: all 1000ms ease; 
+    cursor: pointer;
+}
+.proj{
+    display: flex;
+    justify-content: space-between;
+}
+#projects{
+    text-align: center;
 }
 
 @media (max-width: 600px) {
