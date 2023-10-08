@@ -123,7 +123,7 @@ width: 30%;
 background-color: rgb(234, 229, 229);
 border-radius: 7px;
 margin: 5px;
-box-shadow: 2px 2px 30px rgb(49, 49, 49);
+box-shadow: 1.5px 1.5px 5px rgb(49, 49, 49);
 }
 .allcards:hover{
     transform: scale(1.03);
@@ -189,6 +189,9 @@ nav{
     padding-top: 30px;
     padding-bottom: 18px;
 }
+nav{
+    flex-direction: column;
+}
 .main2 .txt h1 {
     font-size: 45px;
 }
@@ -208,6 +211,11 @@ nav{
         flex-direction: column;
     }
 }
+@media(min-width:420px){
+    nav ul li{
+        justify-content:space-around;
+    }
+}
 @media (max-width: 350px){
    body{
     transition: 2s;
@@ -218,6 +226,9 @@ nav{
         padding-right: 20px;
         padding-top: 24px;
         padding-bottom: 15px;
+    }
+    nav{
+        flex-direction: column;
     }
     
 
