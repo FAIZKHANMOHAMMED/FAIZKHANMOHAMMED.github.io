@@ -123,7 +123,7 @@ width: 30%;
 background-color: rgb(234, 229, 229);
 border-radius: 7px;
 margin: 5px;
-box-shadow: 2px 2px 10px black;
+box-shadow: 2px 2px 30px rgb(49, 49, 49);
 }
 .allcards:hover{
     transform: scale(1.03);
@@ -167,20 +167,21 @@ button:hover{
 
 @media (max-width: 600px) {
     .main2 .btn1 button {
-        padding: 6px 16px;
-        background: #2a2a2a;
-        color: antiquewhite;
-        border-radius: 20x;
-        border: 1px solid #2a2a2a;
-        margin: 0.7rem;
-        transition: all 1000ms ease;
+        padding: 6px 16px; background: #2a2a2a; color: antiquewhite;
+        border-radius: 20x; border: 1px solid #2a2a2a;
+        margin: 0.7rem; transition: all 1000ms ease;
         transform: scale(0.9);
-    
+    }
+    header{
+        overflow: hidden;
     }
     .main2 {
         align-items: center;
         flex-direction: column;
     }
+    .log a h2{
+        text-align: center;
+     }
 nav{
     justify-content: space-around;
     padding-left: 40px;
@@ -202,6 +203,11 @@ nav{
         transform: scale(1.04);
     }
 }
+@media (max-width:540px) {
+    nav{
+        flex-direction: column;
+    }
+}
 @media (max-width: 350px){
    body{
     transition: 2s;
@@ -213,6 +219,8 @@ nav{
         padding-top: 24px;
         padding-bottom: 15px;
     }
+    
+
     .main2 .txt h1 {
         font-size: 40px;
     }
