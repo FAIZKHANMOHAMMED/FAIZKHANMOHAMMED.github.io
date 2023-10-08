@@ -211,41 +211,15 @@ nav{
         flex-direction: column;
     }
 }
-@media(min-width:420px){
-    nav ul li{
-        justify-content:space-around;
+/* @media(min-width:420px){
+    .navbar_link ul{
+        gap:15px;
+        justify-content:space-between;
     }
-}
-@media (max-width: 350px){
-   body{
-    transition: 2s;
-   }
-    nav{
-        justify-content: space-around;
-        padding-left: 30px;
-        padding-right: 20px;
-        padding-top: 24px;
-        padding-bottom: 15px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
-
-    .main2 .txt h1 {
-        font-size: 40px;
-    }
-    .faiz {
-        width: 175px;
-        transform: scale(1.01);
-    }
-    .main2 {
-        align-items: center;
-        flex-direction: column;
-    }
-    .navbar_link ul li {
-        font-size: small;
-        gap: 0.5rem;
-        justify-content: space-between;
+} */
+@media(max-width:370px){
+    .navbar_link ul{
+        gap:10px;
+        justify-content:space-between;
     }
 }
