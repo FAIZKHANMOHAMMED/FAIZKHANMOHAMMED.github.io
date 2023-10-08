@@ -18,14 +18,15 @@
             <a href="index.html">
               <h2>PORTFOLIO</h2>
             </a>
-          </div><br>
+          </div>
+          <br />
           <div class="navbar_link">
             <ul>
               <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
+              <li><a href="#about">ABOUT</a></li>
               <li><a href="#projects">PROJECTS</a></li>
               <li><a href="https://flowcv.com/resume/8n9oa5ve4h">RESUME</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#Contact">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -39,7 +40,9 @@
         <h1>MOHAMMED FAIZ KHAN</h1>
         <h4>Web Developer</h4>
         <div class="btn1">
-          <a href="https://drive.google.com/uc?export=download&id=1UbFWTDLBMxn_punQv5VJoX1Hc93EOyHx">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1UbFWTDLBMxn_punQv5VJoX1Hc93EOyHx"
+          >
             <button>Download Resume</button></a
           >
         </div>
@@ -68,6 +71,24 @@
       </div>
     </div>
     <br /><br />
+    <div class="about" id="about">
+      <h1 style="text-align: center;">About me..</h1>
+      <h4>
+        As a web development enthusiast and a second-year B.Tech student at
+        Vignan's Institute of Information Technology and Sciences, I enjoy
+        coding and creating amazing websites using HTML, CSS, and JavaScript. I
+        have built some cool projects, such as a personal portfolio website, a
+        blog platform, and a quiz app, that showcase my skills and creativity.
+        You can check out some of my work on my GitHub profile or on my website.
+        I am always eager to learn new things and improve my coding skills. I am
+        currently exploring backend development with Node.js, and I am also
+        interested in cloud computing, machine learning, and artificial
+        intelligence. I am looking for opportunities to collaborate with other
+        developers, gain more experience, and contribute to the web development
+        community. If you share similar interests or have any questions, feel
+        free to reach out to me. I would love to hear from you!
+      </h4>
+    </div>
     <h1 id="projects">Projects</h1>
     <br />
     <section class="proj">
@@ -91,7 +112,9 @@
         <div class="des">
           <p>description will be here</p>
           <button>
-            <a href="https://faizkhanmohammed.github.io/netclone/">Visit here</a>
+            <a href="https://faizkhanmohammed.github.io/netclone/"
+              >Visit here</a
+            >
           </button>
         </div>
       </div>
@@ -103,10 +126,40 @@
         <div class="des">
           <p>description will be here</p>
           <button>
-            <a href="https://faizkhanmohammed.github.io/zerohunger/">Visit here</a>
+            <a href="https://faizkhanmohammed.github.io/zerohunger/"
+              >Visit here</a
+            >
           </button>
         </div>
       </div>
+    </section>
+    <section id="Contact">
+      <div class="container">
+       <h1 style="text-align: center;">Contact me..!</h1>
+        <form action="#" method="post">
+      
+          <div class="form-group">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" id="email"  placeholder="Mail" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject"></label>
+            <input type="text" id="subject"  placeholder="Subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    
+      </div>
+      
+      
     </section>
     <footer></footer>
   </body>

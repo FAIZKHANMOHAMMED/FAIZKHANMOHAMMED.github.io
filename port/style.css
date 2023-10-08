@@ -20,11 +20,13 @@ nav {
     padding-top: 40px;
     padding-bottom: 27px;
     box-sizing: border-box;
+   
 }
 
 header{
     box-shadow: 0px -30px 20px rgba(0,0,0, 0.3);
     background-color: fff;
+    
 }
 .navbar_link ul {
     position: relative;
@@ -155,8 +157,7 @@ button {
 button:hover{
     background-color: rgb(247, 124, 124);
     color: white;
-    transition: all 1000ms ease; 
-    cursor: pointer;
+    
 }
 .proj{
     display: flex;
@@ -165,6 +166,53 @@ button:hover{
 #projects{
     text-align: center;
 }
+.about h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:500;
+}
+/* contact css */
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    margin-bottom: 15px;
+    border-radius: 7px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+  .form-group textarea {
+    height: 100px;
+    border-radius: 7px;
+  }
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #2a2a2a;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-color: rgb(247, 124, 124);
+    color: white;
+    transition: all 1000ms ease;
+  }
+
+
+ 
+
 
 @media (max-width: 600px) {
     .main2 .btn1 button {
@@ -219,3 +267,15 @@ nav{
         justify-content:space-between;
     }
 }
+@media (max-width: 360px) {
+    .container {
+      padding: 10px;
+    }
+    .form-group input, .form-group textarea {
+      padding: 8px;
+    }
+    .submit-btn {
+      padding: 8px;
+    }
+  }
+
