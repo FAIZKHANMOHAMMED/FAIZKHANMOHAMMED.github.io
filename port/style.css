@@ -194,6 +194,9 @@ button:hover{
     height: 100px;
     border-radius: 7px;
   }
+  #Contact{
+    box-shadow: 2px 2px 5px grey;
+  }
   .submit-btn {
     display: block;
     width: 100%;
