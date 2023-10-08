@@ -62,11 +62,12 @@ header{
     width: 350px;
     transition: all 1400ms ease;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .main2 .faiz:hover {
-    box-shadow: 2px 2px 2px ease;
-    transform: scale(1.15);
+    box-shadow: 2px 2px 7px rgb(77, 76, 76) ;
+    transform: scale(1.05);
 }
 
 .main2 .txt {
@@ -211,13 +212,8 @@ nav{
         flex-direction: column;
     }
 }
-/* @media(min-width:420px){
-    .navbar_link ul{
-        gap:15px;
-        justify-content:space-between;
-    }
-} */
-@media(max-width:370px){
+
+@media(max-width:380px){
     .navbar_link ul{
         gap:10px;
         justify-content:space-between;
