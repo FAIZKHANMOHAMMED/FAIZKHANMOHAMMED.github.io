@@ -211,11 +211,6 @@ button:hover{
     color: white;
     transition: all 1000ms ease;
   }
-
-
- 
-
-
 @media (max-width: 600px) {
     .main2 .btn1 button {
         padding: 6px 16px; background: #2a2a2a; color: antiquewhite;

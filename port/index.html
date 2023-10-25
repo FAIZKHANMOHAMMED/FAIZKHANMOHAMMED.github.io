@@ -8,9 +8,92 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body onload="document.body.style.opacity='1'">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="progressbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        "use strict";
+
+        var $pline = $(".progressbar.line");
+        var $pcircle = $(".progressbar.circle");
+        $pline.each(function (i) {
+          var line = new ProgressBar.Line(this, {
+            strokeWidth: 6,
+            trailWidth: 6,
+            duration: 3000,
+            easing: "easeInOut",
+            text: {
+              style: {
+                color: "inherit",
+                position: "absolute",
+                right: "0",
+                top: "-30px",
+                padding: 0,
+                margin: 0,
+                transform: null,
+              },
+              autoStyleContainer: false,
+            },
+            step: function (state, line, attachment) {
+              line.setText(Math.round(line.value() * 100) + " %");
+            },
+          });
+          var value = $(this).attr("data-value") / 100;
+          $pline.waypoint(
+            function () {
+              line.animate(value);
+            },
+            {
+              offset: "100%",
+            }
+          );
+        });
+        $pcircle.each(function (i) {
+          var circle = new ProgressBar.SemiCircle(this, {
+            strokeWidth: 5,
+            trailWidth: 5,
+            duration: 2000,
+            easing: "easeInOut",
+            step: function (state, circle, attachment) {
+              circle.setText(Math.round(circle.value() * 100));
+            },
+          });
+          var value = $(this).attr("data-value") / 100;
+          $pcircle.waypoint(
+            function () {
+              circle.animate(value);
+            },
+            {
+              offset: "100%",
+            }
+          );
+        });
+
+        $(".counter .value").counterUp({
+          delay: 50,
+          time: 1000,
+        });
+
+        $(".countdown").countdown();
+      });
+    </script>
     <header>
       <div class="main">
         <nav>
@@ -25,7 +108,7 @@
               <li><a href="#">HOME</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#projects">PROJECTS</a></li>
-              <li><a href="https://flowcv.com/resume/8n9oa5ve4h">RESUME</a></li>
+              <li><a href="#skills">SKILLS</a></li>
               <li><a href="#Contact">CONTACT</a></li>
             </ul>
           </div>
@@ -72,7 +155,7 @@
     </div>
     <br /><br />
     <div class="about" id="about">
-      <h1 style="text-align: center;">About me..</h1>
+      <h1 style="text-align: center">About me..</h1>
       <h4>
         As a web development enthusiast and a second-year B.Tech student at
         Vignan's Institute of Information Technology and Sciences, I enjoy
@@ -89,6 +172,45 @@
         free to reach out to me. I would love to hear from you!
       </h4>
     </div>
+    <!-- skills -->
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h1 class="title-color text-center" id="skills">SKILLS</h1>
+        <br /><br /><br />
+        <div class="row text-center">
+          <div class="col-lg-3">
+            <div class="progressbar circle blue" data-value="70"></div>
+            <h5>HTML/Css/Js</h5>
+            <p>HTML, CSS, and JavaScript are the three fundamental building blocks of the web</p>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="progressbar circle green" data-value="25"></div>
+            <h5>MySQL/Jquery</h5>
+            <p>MySQL is a widely used relational database management system (RDBMS) that stores data in tables made up of rows and columns. </p>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="progressbar circle red" data-value="45"></div>
+            <h5>SEO</h5>
+            <p>
+              SEO is the process of improving website traffic from search
+              engines by optimizing web pages to rank higher in search results.
+              It targets unpaid traffic and is different from SEM and PPC
+              advertising
+            </p>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="progressbar circle yellow" data-value="80"></div>
+            <h5>UX designing</h5>
+            <p>User experience (UX) design is the process design teams use to create products that provide meaningful and relevant experiences to users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of skills -->
     <h1 id="projects">Projects</h1>
     <br />
     <section class="proj">
@@ -135,28 +257,49 @@
     </section>
     <section id="Contact">
       <div class="container">
-       <h1 style="text-align: center;">Contact me..!</h1>
+        <h1 style="text-align: center">Contact me..!</h1>
         <form action="#" method="post">
-      
           <div class="form-group">
             <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="email"></label>
-            <input type="email" id="email"  placeholder="Mail" name="email" required>
+            <input
+              type="email"
+              id="email"
+              placeholder="Mail"
+              name="email"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="subject"></label>
-            <input type="text" id="subject"  placeholder="Subject" name="subject" required>
+            <input
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              name="subject"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="message"></label>
-            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
           </div>
           <button type="submit" class="submit-btn">Submit</button>
         </form>
-    
       </div>
     </section>
     <footer></footer>
