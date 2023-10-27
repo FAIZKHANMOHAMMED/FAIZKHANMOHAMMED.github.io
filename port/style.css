@@ -59,7 +59,7 @@ header{
 }
 
 .main2 .faiz {
-
+    mix-blend-mode:multiply;
     width: 350px;
     transition: all 1400ms ease;
     cursor: pointer;
@@ -67,6 +67,7 @@ header{
 }
 
 .main2 .faiz:hover {
+    
     box-shadow: 2px 2px 7px rgb(77, 76, 76) ;
     transform: scale(1.05);
 }
