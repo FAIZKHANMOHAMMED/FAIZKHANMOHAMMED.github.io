@@ -218,9 +218,9 @@ button:hover{
         margin: 0.7rem; transition: all 1000ms ease;
         transform: scale(0.9);
     }
-    header{
+    /* header{
         overflow: hidden;
-    }
+    } */
     .main2 {
         align-items: center;
         flex-direction: column;
