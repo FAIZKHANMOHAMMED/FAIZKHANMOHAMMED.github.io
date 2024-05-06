@@ -257,17 +257,27 @@ nav{
     nav{
         flex-direction: column;
     }
+    .para{
+        font-size: small;
+    }
 }
 
 @media(max-width:380px){
     .navbar_link ul{
         gap:10px;
         justify-content:space-between;
+
+    }
+    .para{
+        font-size: small;
     }
 }
 @media (max-width: 360px) {
     .container {
       padding: 10px;
+    }
+    .para{
+        font-size: small;
     }
     .form-group input, .form-group textarea {
       padding: 8px;
