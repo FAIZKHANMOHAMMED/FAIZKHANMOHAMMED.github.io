@@ -168,7 +168,8 @@ button:hover{
 }
 .about h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight:500;
+    font-weight:200;
+    max-width: fit-content;
 }
 /* contact css */
 

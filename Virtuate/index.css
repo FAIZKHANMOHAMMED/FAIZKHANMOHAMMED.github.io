@@ -150,7 +150,9 @@ input[type="text"]:hover {
 #micButton:hover {
   border: none;
 }
-
+.imp_you{
+  display: inline !important;
+}
 #camButton:hover {
   border: none;
 }
